@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CSV/Excel Comparison Report</title>
+<style>
+ body {
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+   margin: 24px; color: #222;
+ }
+ h1, h2 { margin: 0.2em 0 0.4em; }
+ table.grid {
+   border-collapse: collapse; width: 100%; margin-bottom: 20px;
+ }
+ table.grid th, table.grid td {
+   border: 1px solid #ddd; padding: 8px 10px; text-align: left;
+   vertical-align: top; word-break: break-word;
+ }
+ table.grid thead th { background: #f0f0f0; }
+ .summary {
+   border: 1px solid #ddd; border-radius: 8px; padding: 16px;
+   background: #fafafa; margin-bottom: 16px;
+ }
+ .pill {
+   display: inline-block; padding: 2px 8px; border-radius: 12px;
+   font-size: 12px; margin-left: 8px;
+ }
+ .ok { background: #e8f5e9; color: #1b5e20; border: 1px solid #c8e6c9; }
+ .err { background: #ffebee; color: #b71c1c; border: 1px solid #ffcdd2; }
+ .charts { display: flex; gap: 24px; flex-wrap: wrap; }
+ .chart-box { flex: 1 1 320px; border: 1px solid #ddd; border-radius: 8px; padding: 12px; }
+ footer { margin-top: 32px; color: #666; font-size: 12px; }
+</style>
+</head>
+<body>
+<h1>Comparison Report</h1>
+<div class="summary">
+ <p><strong>Result:</strong>
+   <span class="pill err">
+     160 mismatches
+   </span>
+ </p>
+ <table class="grid">
+   <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+   <tbody>
+     <tr><td>File 1</td><td>rpq1.xlsx</td></tr>
+<tr><td>File 2</td><td>rpq2.xlsx</td></tr>
+<tr><td>Data start row</td><td>3</td></tr>
+<tr><td>Start column letters</td><td>A</td></tr>
+<tr><td>Header GROUP row (File1)</td><td>1</td></tr>
+<tr><td>Header DETAIL row (File1)</td><td>2</td></tr>
+<tr><td>Header GROUP row (File2)</td><td>1</td></tr>
+<tr><td>Header DETAIL row (File2)</td><td>2</td></tr>
+<tr><td>Composite Header Joiner</td><td>_</td></tr>
+<tr><td>Rows in File1</td><td>6885</td></tr>
+<tr><td>Rows in File2</td><td>6885</td></tr>
+<tr><td>Max Columns in File1</td><td>65</td></tr>
+<tr><td>Max Columns in File2</td><td>65</td></tr>
+<tr><td>Headers present in BOTH (unique names)</td><td>64</td></tr>
+<tr><td>Duplicate headers in File1</td><td>None</td></tr>
+<tr><td>Duplicate headers in File2</td><td>None</td></tr>
+<tr><td>Missing headers in File2</td><td>0</td></tr>
+<tr><td>Missing headers in File1</td><td>0</td></tr>
+<tr><td>Total Cells Compared (matching headers only)</td><td>440512</td></tr>
+<tr><td>Matches</td><td>440352</td></tr>
+<tr><td>Mismatches</td><td>160</td></tr>
+   </tbody>
+ </table>
+</div>
+<h2>Charts</h2>
+<div class="charts">
+ <div class="chart-box">
+   <h3>Matches vs. Mismatches</h3>
+   data:image/png;base64,
+ </div>
+ <div class="chart-box">
+   <h3>Top Headers by Mismatch Count</h3>
+   data:image/png;base64,
+   <table class="grid" style="margin-top:12px;">
+     <thead><tr><th>Header</th><th>Mismatches</th></tr></thead>
+     <tbody><tr><td>PPA%_2025</td><td>16</td></tr>
+<tr><td>PPA%_2026</td><td>16</td></tr>
+<tr><td>PPA%_2027</td><td>16</td></tr>
+<tr><td>PPA%_2028</td><td>16</td></tr>
+<tr><td>PPA%_2029</td><td>16</td></tr>
+<tr><td>PPL%_2025</td><td>16</td></tr>
+<tr><td>PPL%_2026</td><td>16</td></tr>
+<tr><td>PPL%_2027</td><td>16</td></tr>
+<tr><td>PPL%_2028</td><td>16</td></tr>
+<tr><td>PPL%_2029</td><td>16</td></tr></tbody>
+   </table>
+ </div>
+</div>
+<h2>Value Mismatch Details (only)</h2>
+<table class="grid">
+ <thead>
+   <tr>
+     <th>Header</th><th>Row</th><th>File1 Cell</th><th>File2 Cell</th><th>File1 Value</th><th>File2 Value</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr><td>PPA%_2025</td><td>3</td><td>BD5</td><td>BI5</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2025</td><td>4</td><td>BD6</td><td>BI6</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2025</td><td>5</td><td>BD7</td><td>BI7</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2025</td><td>6</td><td>BD8</td><td>BI8</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2025</td><td>7</td><td>BD9</td><td>BI9</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2025</td><td>8</td><td>BD10</td><td>BI10</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2025</td><td>9</td><td>BD11</td><td>BI11</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2025</td><td>10</td><td>BD12</td><td>BI12</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2025</td><td>11</td><td>BD13</td><td>BI13</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2025</td><td>12</td><td>BD14</td><td>BI14</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2025</td><td>13</td><td>BD15</td><td>BI15</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2025</td><td>14</td><td>BD16</td><td>BI16</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2025</td><td>15</td><td>BD17</td><td>BI17</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2025</td><td>16</td><td>BD18</td><td>BI18</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2025</td><td>17</td><td>BD19</td><td>BI19</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2025</td><td>18</td><td>BD20</td><td>BI20</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2026</td><td>3</td><td>BE5</td><td>BJ5</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2026</td><td>4</td><td>BE6</td><td>BJ6</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2026</td><td>5</td><td>BE7</td><td>BJ7</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2026</td><td>6</td><td>BE8</td><td>BJ8</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2026</td><td>7</td><td>BE9</td><td>BJ9</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2026</td><td>8</td><td>BE10</td><td>BJ10</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2026</td><td>9</td><td>BE11</td><td>BJ11</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2026</td><td>10</td><td>BE12</td><td>BJ12</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2026</td><td>11</td><td>BE13</td><td>BJ13</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2026</td><td>12</td><td>BE14</td><td>BJ14</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2026</td><td>13</td><td>BE15</td><td>BJ15</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2026</td><td>14</td><td>BE16</td><td>BJ16</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2026</td><td>15</td><td>BE17</td><td>BJ17</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2026</td><td>16</td><td>BE18</td><td>BJ18</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2026</td><td>17</td><td>BE19</td><td>BJ19</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2026</td><td>18</td><td>BE20</td><td>BJ20</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2027</td><td>3</td><td>BF5</td><td>BK5</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2027</td><td>4</td><td>BF6</td><td>BK6</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2027</td><td>5</td><td>BF7</td><td>BK7</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2027</td><td>6</td><td>BF8</td><td>BK8</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2027</td><td>7</td><td>BF9</td><td>BK9</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2027</td><td>8</td><td>BF10</td><td>BK10</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2027</td><td>9</td><td>BF11</td><td>BK11</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2027</td><td>10</td><td>BF12</td><td>BK12</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2027</td><td>11</td><td>BF13</td><td>BK13</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2027</td><td>12</td><td>BF14</td><td>BK14</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2027</td><td>13</td><td>BF15</td><td>BK15</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2027</td><td>14</td><td>BF16</td><td>BK16</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2027</td><td>15</td><td>BF17</td><td>BK17</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2027</td><td>16</td><td>BF18</td><td>BK18</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2027</td><td>17</td><td>BF19</td><td>BK19</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2027</td><td>18</td><td>BF20</td><td>BK20</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2028</td><td>3</td><td>BG5</td><td>BL5</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2028</td><td>4</td><td>BG6</td><td>BL6</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2028</td><td>5</td><td>BG7</td><td>BL7</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2028</td><td>6</td><td>BG8</td><td>BL8</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2028</td><td>7</td><td>BG9</td><td>BL9</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2028</td><td>8</td><td>BG10</td><td>BL10</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2028</td><td>9</td><td>BG11</td><td>BL11</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2028</td><td>10</td><td>BG12</td><td>BL12</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2028</td><td>11</td><td>BG13</td><td>BL13</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2028</td><td>12</td><td>BG14</td><td>BL14</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2028</td><td>13</td><td>BG15</td><td>BL15</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2028</td><td>14</td><td>BG16</td><td>BL16</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2028</td><td>15</td><td>BG17</td><td>BL17</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2028</td><td>16</td><td>BG18</td><td>BL18</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2028</td><td>17</td><td>BG19</td><td>BL19</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2028</td><td>18</td><td>BG20</td><td>BL20</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2029</td><td>3</td><td>BH5</td><td>BM5</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2029</td><td>4</td><td>BH6</td><td>BM6</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2029</td><td>5</td><td>BH7</td><td>BM7</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2029</td><td>6</td><td>BH8</td><td>BM8</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2029</td><td>7</td><td>BH9</td><td>BM9</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2029</td><td>8</td><td>BH10</td><td>BM10</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2029</td><td>9</td><td>BH11</td><td>BM11</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2029</td><td>10</td><td>BH12</td><td>BM12</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2029</td><td>11</td><td>BH13</td><td>BM13</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2029</td><td>12</td><td>BH14</td><td>BM14</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2029</td><td>13</td><td>BH15</td><td>BM15</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2029</td><td>14</td><td>BH16</td><td>BM16</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2029</td><td>15</td><td>BH17</td><td>BM17</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2029</td><td>16</td><td>BH18</td><td>BM18</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2029</td><td>17</td><td>BH19</td><td>BM19</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPA%_2029</td><td>18</td><td>BH20</td><td>BM20</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2025</td><td>3</td><td>AY5</td><td>AT5</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2025</td><td>4</td><td>AY6</td><td>AT6</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2025</td><td>5</td><td>AY7</td><td>AT7</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2025</td><td>6</td><td>AY8</td><td>AT8</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2025</td><td>7</td><td>AY9</td><td>AT9</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2025</td><td>8</td><td>AY10</td><td>AT10</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2025</td><td>9</td><td>AY11</td><td>AT11</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2025</td><td>10</td><td>AY12</td><td>AT12</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2025</td><td>11</td><td>AY13</td><td>AT13</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2025</td><td>12</td><td>AY14</td><td>AT14</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2025</td><td>13</td><td>AY15</td><td>AT15</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2025</td><td>14</td><td>AY16</td><td>AT16</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2025</td><td>15</td><td>AY17</td><td>AT17</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2025</td><td>16</td><td>AY18</td><td>AT18</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2025</td><td>17</td><td>AY19</td><td>AT19</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2025</td><td>18</td><td>AY20</td><td>AT20</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2026</td><td>3</td><td>AZ5</td><td>AU5</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2026</td><td>4</td><td>AZ6</td><td>AU6</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2026</td><td>5</td><td>AZ7</td><td>AU7</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2026</td><td>6</td><td>AZ8</td><td>AU8</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2026</td><td>7</td><td>AZ9</td><td>AU9</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2026</td><td>8</td><td>AZ10</td><td>AU10</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2026</td><td>9</td><td>AZ11</td><td>AU11</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2026</td><td>10</td><td>AZ12</td><td>AU12</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2026</td><td>11</td><td>AZ13</td><td>AU13</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2026</td><td>12</td><td>AZ14</td><td>AU14</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2026</td><td>13</td><td>AZ15</td><td>AU15</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2026</td><td>14</td><td>AZ16</td><td>AU16</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2026</td><td>15</td><td>AZ17</td><td>AU17</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2026</td><td>16</td><td>AZ18</td><td>AU18</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2026</td><td>17</td><td>AZ19</td><td>AU19</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2026</td><td>18</td><td>AZ20</td><td>AU20</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2027</td><td>3</td><td>BA5</td><td>AV5</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2027</td><td>4</td><td>BA6</td><td>AV6</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2027</td><td>5</td><td>BA7</td><td>AV7</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2027</td><td>6</td><td>BA8</td><td>AV8</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2027</td><td>7</td><td>BA9</td><td>AV9</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2027</td><td>8</td><td>BA10</td><td>AV10</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2027</td><td>9</td><td>BA11</td><td>AV11</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2027</td><td>10</td><td>BA12</td><td>AV12</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2027</td><td>11</td><td>BA13</td><td>AV13</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2027</td><td>12</td><td>BA14</td><td>AV14</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2027</td><td>13</td><td>BA15</td><td>AV15</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2027</td><td>14</td><td>BA16</td><td>AV16</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2027</td><td>15</td><td>BA17</td><td>AV17</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2027</td><td>16</td><td>BA18</td><td>AV18</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2027</td><td>17</td><td>BA19</td><td>AV19</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2027</td><td>18</td><td>BA20</td><td>AV20</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2028</td><td>3</td><td>BB5</td><td>AW5</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2028</td><td>4</td><td>BB6</td><td>AW6</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2028</td><td>5</td><td>BB7</td><td>AW7</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2028</td><td>6</td><td>BB8</td><td>AW8</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2028</td><td>7</td><td>BB9</td><td>AW9</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2028</td><td>8</td><td>BB10</td><td>AW10</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2028</td><td>9</td><td>BB11</td><td>AW11</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2028</td><td>10</td><td>BB12</td><td>AW12</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2028</td><td>11</td><td>BB13</td><td>AW13</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2028</td><td>12</td><td>BB14</td><td>AW14</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2028</td><td>13</td><td>BB15</td><td>AW15</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2028</td><td>14</td><td>BB16</td><td>AW16</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2028</td><td>15</td><td>BB17</td><td>AW17</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2028</td><td>16</td><td>BB18</td><td>AW18</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2028</td><td>17</td><td>BB19</td><td>AW19</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2028</td><td>18</td><td>BB20</td><td>AW20</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2029</td><td>3</td><td>BC5</td><td>AX5</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2029</td><td>4</td><td>BC6</td><td>AX6</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2029</td><td>5</td><td>BC7</td><td>AX7</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2029</td><td>6</td><td>BC8</td><td>AX8</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2029</td><td>7</td><td>BC9</td><td>AX9</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2029</td><td>8</td><td>BC10</td><td>AX10</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2029</td><td>9</td><td>BC11</td><td>AX11</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2029</td><td>10</td><td>BC12</td><td>AX12</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2029</td><td>11</td><td>BC13</td><td>AX13</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2029</td><td>12</td><td>BC14</td><td>AX14</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2029</td><td>13</td><td>BC15</td><td>AX15</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2029</td><td>14</td><td>BC16</td><td>AX16</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2029</td><td>15</td><td>BC17</td><td>AX17</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2029</td><td>16</td><td>BC18</td><td>AX18</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2029</td><td>17</td><td>BC19</td><td>AX19</td><td>0%</td><td>1.11</td></tr>
+<tr><td>PPL%_2029</td><td>18</td><td>BC20</td><td>AX20</td><td>0%</td><td>1.11</td></tr>
+ </tbody>
+</table>
+<footer>
+ Generated: 2025-12-31 12:46:14.
+ Data start row: 3. Start column letters: A.
+</footer>
+</body>
+</html>
