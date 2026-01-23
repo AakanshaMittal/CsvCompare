@@ -1,8 +1,8 @@
 from pyxlsb import open_workbook
 import csv
 
-input_file = r"RPT 2025.10.03 v22.07_8Dec- Weightloss, Drug Level Lift - With Data (1).xlsb"
-output_file = r"RAOutput.csv"
+input_file = r"~$AD_RPT_T1.xlsx"
+output_file = r"RAOutputAD_RPT.csv"
  
 with open_workbook(input_file) as wb:
     with wb.get_sheet("RA Output") as sheet:

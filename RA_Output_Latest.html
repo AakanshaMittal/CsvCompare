@@ -1,0 +1,745 @@
+<html><head><title>RA Output Validation</title>
+<style>
+body{font-family:Arial;padding:20px}
+table{border-collapse:collapse;width:100%}
+th,td{border:1px solid #ccc;padding:6px;font-size:12px}
+th{background:#f2f2f2}
+.diff{background:#ffd6d6;font-weight:600}
+</style></head><body>
+<h1>RA Output Validation Report</h1>
+<p><b>Total mismatches:</b> 330</p>
+<p><b>Extra rows in RPT_WegovyLatest1.csv:</b> 0</p>
+<p><b>Extra rows in ADP_TC1.csv:</b> 0</p>
+<h2>Mismatch Summary (with NDCs)</h2>
+<table><tr><th>Header</th><th>Mismatch Count</th><th>Affected NDCs</th></tr>
+<tr><td>Shifted_QTY_Selected Excl Desc</td><td>330</td><td>169210011, 169210125, 169320111, 169320415, 169320515, 169330312, 169413013, 169418113, 169430330, 169430730, 169431430, 169450114, 169450514, 169451714, 169452414, 169452514, 169477212, 169633910, 169750111, 173085910, 173085914, 173088210, 173088710, 173088714, 173089310, 173089314, 173091610, 3089321, 3089331, 3089421, 3089431, 3089470, 310351260, 310620530, 310620590, 310621030, 310621039, 310621090, 3376474, 456120130, 456120230, 456120330, 469012599, 469062599, 469072560, 50458057501, 50458057718, 50458057760, 50458057810, 50458057830, 50458057890, 50458057910, 50458057930, 50458057989, 50458057990, 50458058030, 50458058090, 50458058451, 55513013760, 55513036955, 57894006003, 57894006103, 57962001428, 57962014009, 57962014012, 57962028028, 57962042028, 58406001004, 58406002104, 58406003204, 58406004404, 58406005504, 59572050121, 59572050200, 59572050221, 59572050321, 59572050421, 597014030, 597014090, 597014360, 597014560, 597015230, 597015237, 597015290, 597015330, 597015337, 597015390, 6007861, 6008061, 6008062, 6008131, 6008154, 6011231, 6011254, 6022128, 6022131, 6022154, 6027728, 6027731, 6027754, 6027782, 6057561, 6057562, 6057761, 6057762, 61874011520, 61874011530, 61874013030, 61874014530, 61874016030, 65649030302, 65649030303, 66993013597, 66993013697, 66993045630, 66993045730, 68546017060, 68546017160, 68546017260, 68546047256, 68546047356, 68546047456, 68546047656, 69018721, 69018821, 69018921, 69028403, 69048603, 69068803, 73070010011, 73070010215, 73070010315, 78065920, 78065967, 78069620, 78069667, 78077720, 78077767, 78123820</td></tr>
+</table><br>
+<h2>Value Mismatches</h2>
+<table><tr><th>Row Key</th><th>Column</th><th>File 1</th><th>File 2</th></tr>
+<tr class='diff'><td>G5_GOV||57962014009||IMBRUVICA||REBATABLE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458058030||XARELTO||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6008061||JANUMET XR||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||61874011530||VRAYLAR||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057930||XARELTO||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||310351260||CALQUENCE||REBATABLE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||310351260||CALQUENCE||REBATABLE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||310621030||FARXIGA||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||68546017060||AUSTEDO||REBATABLE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||78065967||ENTRESTO||AGGREGATE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597015330||JARDIANCE||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||3089431||ELIQUIS||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||78077767||ENTRESTO||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597015390||JARDIANCE||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169418113||OZEMPIC||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6057562||JANUMET||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458058090||XARELTO||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597014030||TRADJENTA||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||69018921||IBRANCE||AGGREGATE||B||B||Y||Y||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||59572050321||POMALYST||AGGREGATE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||61874014530||VRAYLAR||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||58406004404||ENBREL MINI||REBATABLE||B||B||Y||Y||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597014560||OFEV||ALTERNATIVE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057718||XARELTO||AGGREGATE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||58406003204||ENBREL SURECLICK||REBATABLE||B||B||Y||Y||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||66993013597||FLUTICASONE FUROATE/VILANTEROL ELLIPTA||EDIT||G||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458058090||XARELTO||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||55513036955||OTEZLA||REBATABLE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||173088710||TRELEGY ELLIPTA||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169418113||OZEMPIC||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597015230||JARDIANCE||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||3089421||ELIQUIS||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||310621090||FARXIGA||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||310621030||FARXIGA||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||68546017060||AUSTEDO||REBATABLE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||68546017260||AUSTEDO||REBATABLE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597014560||OFEV||ALTERNATIVE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6027754||JANUVIA||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||173085910||BREO ELLIPTA||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169633910||NOVOLOG FLEXPEN||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||68546047456||AUSTEDO XR||REBATABLE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||69048603||IBRANCE||AGGREGATE||B||B||Y||Y||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||78065967||ENTRESTO||AGGREGATE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057910||XARELTO||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||61874016030||VRAYLAR||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||69048603||IBRANCE||AGGREGATE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||78069620||ENTRESTO||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||456120330||LINZESS||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||78065967||ENTRESTO||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||456120130||LINZESS||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597014090||TRADJENTA||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||310620590||FARXIGA||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||3089431||ELIQUIS||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057930||XARELTO||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||173088714||TRELEGY ELLIPTA||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169452414||WEGOVY||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||58406004404||ENBREL MINI||REBATABLE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||59572050221||POMALYST||AGGREGATE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||61874013030||VRAYLAR||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6008154||JANUMET XR||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169431430||RYBELSUS||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||78065920||ENTRESTO||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||78069620||ENTRESTO||AGGREGATE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6057762||JANUMET||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||469062599||XTANDI||REBATABLE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||310620530||FARXIGA||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||3089321||ELIQUIS||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||173089310||TRELEGY ELLIPTA||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||469012599||XTANDI||REBATABLE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169413013||OZEMPIC||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||173088710||TRELEGY ELLIPTA||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597015290||JARDIANCE||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6022128||JANUVIA||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||3089421||ELIQUIS||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057501||XARELTO||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597015337||JARDIANCE||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169431430||RYBELSUS||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169320415||FIASP FLEXTOUCH||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169452414||WEGOVY||AGGREGATE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169430330||RYBELSUS||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||173085910||BREO ELLIPTA||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||173089314||TRELEGY ELLIPTA||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169451714||WEGOVY||AGGREGATE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6027731||JANUVIA||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6027754||JANUVIA||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6011231||JANUVIA||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||57894006003||STELARA||REBATABLE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||58406003204||ENBREL SURECLICK||REBATABLE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6057762||JANUMET||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6022131||JANUVIA||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||57962042028||IMBRUVICA||REBATABLE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||469062599||XTANDI||REBATABLE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||68546047256||AUSTEDO XR||AGGREGATE||B||B||Y||Y||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||78123820||ENTRESTO||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597014030||TRADJENTA||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||469072560||XTANDI||REBATABLE||B||B||Y||Y||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||173088710||TRELEGY ELLIPTA||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169633910||NOVOLOG FLEXPEN||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||61874016030||VRAYLAR||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||78069620||ENTRESTO||AGGREGATE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057890||XARELTO||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6011231||JANUVIA||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169210011||NOVOLOG RELION||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||173091610||BREO ELLIPTA||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6022154||JANUVIA||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6057561||JANUMET||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||68546017260||AUSTEDO||REBATABLE||B||B||Y||Y||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6007861||JANUMET XR||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||469072560||XTANDI||REBATABLE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169633910||NOVOLOG FLEXPEN||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||3376474||ELIQUIS STARTER PACK||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169477212||OZEMPIC||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||57962042028||IMBRUVICA||REBATABLE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||65649030302||XIFAXAN||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169450514||WEGOVY||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||3089470||ELIQUIS||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169430730||RYBELSUS||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057760||XARELTO||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||61874011520||VRAYLAR||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||78069667||ENTRESTO||AGGREGATE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169750111||NOVOLOG||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6022131||JANUVIA||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6027731||JANUVIA||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597014090||TRADJENTA||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||3089421||ELIQUIS||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169450114||WEGOVY||AGGREGATE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||65649030302||XIFAXAN||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||55513036955||OTEZLA||REBATABLE||B||B||Y||Y||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6057562||JANUMET||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169430330||RYBELSUS||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597015230||JARDIANCE||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||69068803||IBRANCE||AGGREGATE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169330312||NOVOLOG PENFILL||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||65649030302||XIFAXAN||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||173088210||BREO ELLIPTA||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||55513013760||OTEZLA||REBATABLE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||456120130||LINZESS||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6007861||JANUMET XR||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||61874011530||VRAYLAR||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057760||XARELTO||AGGREGATE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169452514||WEGOVY||AGGREGATE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6011254||JANUVIA||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597015390||JARDIANCE||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057830||XARELTO||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||65649030303||XIFAXAN||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||68546017160||AUSTEDO||REBATABLE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169413013||OZEMPIC||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057718||XARELTO||AGGREGATE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458058030||XARELTO||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||310621030||FARXIGA||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||310620590||FARXIGA||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||58406004404||ENBREL MINI||REBATABLE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||3089331||ELIQUIS||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169750111||NOVOLOG||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||57962042028||IMBRUVICA||REBATABLE||B||B||Y||Y||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169320515||FIASP PENFILL||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||68546047356||AUSTEDO XR||REBATABLE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169320111||FIASP||AGGREGATE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||66993045730||DAPAGLIFLOZIN PROPANEDIOL||AGGREGATE||G||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597014360||OFEV||ALTERNATIVE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||58406002104||ENBREL||REBATABLE||B||B||Y||Y||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||78069667||ENTRESTO||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057760||XARELTO||AGGREGATE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597015230||JARDIANCE||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||57962001428||IMBRUVICA||AGGREGATE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169320415||FIASP FLEXTOUCH||AGGREGATE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597015330||JARDIANCE||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169210125||NOVOLOG FLEXPEN RELION||AGGREGATE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057890||XARELTO||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6022131||JANUVIA||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||69018921||IBRANCE||AGGREGATE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169413013||OZEMPIC||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169330312||NOVOLOG PENFILL||AGGREGATE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||66993013697||FLUTICASONE FUROATE/VILANTEROL ELLIPTA||EDIT||G||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||310620530||FARXIGA||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6027754||JANUVIA||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||69048603||IBRANCE||AGGREGATE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6057561||JANUMET||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6022154||JANUVIA||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6057762||JANUMET||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||59572050321||POMALYST||AGGREGATE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||78077767||ENTRESTO||AGGREGATE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||57894006103||STELARA||REBATABLE||B||B||Y||Y||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6011254||JANUVIA||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||173089310||TRELEGY ELLIPTA||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||78077720||ENTRESTO||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6057761||JANUMET||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057830||XARELTO||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||3089321||ELIQUIS||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057989||XARELTO||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||59572050421||POMALYST||AGGREGATE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597015290||JARDIANCE||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||55513013760||OTEZLA||REBATABLE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||59572050121||POMALYST||AGGREGATE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458058451||XARELTO STARTER PACK||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597015237||JARDIANCE||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597015330||JARDIANCE||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||78077767||ENTRESTO||AGGREGATE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057830||XARELTO||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||69028403||IBRANCE||AGGREGATE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057989||XARELTO||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||310351260||CALQUENCE||REBATABLE||B||B||Y||Y||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597015290||JARDIANCE||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||61874014530||VRAYLAR||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||69068803||IBRANCE||AGGREGATE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057990||XARELTO||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||3089331||ELIQUIS||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6008154||JANUMET XR||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||58406001004||ENBREL||REBATABLE||B||B||Y||Y||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||173085914||BREO ELLIPTA||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||310621090||FARXIGA||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||173088210||BREO ELLIPTA||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458058030||XARELTO||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||59572050200||POMALYST||AGGREGATE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057930||XARELTO||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||73070010011||INSULIN ASPART||EDIT||G||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057990||XARELTO||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||57894006003||STELARA||REBATABLE||B||B||Y||Y||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||66993013697||FLUTICASONE FUROATE/VILANTEROL ELLIPTA||EDIT||G||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||66993013597||FLUTICASONE FUROATE/VILANTEROL ELLIPTA||EDIT||G||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||58406002104||ENBREL||REBATABLE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||78065920||ENTRESTO||AGGREGATE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169431430||RYBELSUS||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6008062||JANUMET XR||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||469012599||XTANDI||REBATABLE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||61874011530||VRAYLAR||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||456120330||LINZESS||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6027782||JANUVIA||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169430330||RYBELSUS||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597015390||JARDIANCE||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169210011||NOVOLOG RELION||AGGREGATE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597014090||TRADJENTA||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458058451||XARELTO STARTER PACK||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||69018921||IBRANCE||AGGREGATE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||310620530||FARXIGA||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||173085910||BREO ELLIPTA||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6027782||JANUVIA||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6027728||JANUVIA||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||57962028028||IMBRUVICA||AGGREGATE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||469072560||XTANDI||REBATABLE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169452514||WEGOVY||AGGREGATE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057890||XARELTO||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||456120330||LINZESS||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169430730||RYBELSUS||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597014030||TRADJENTA||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||69018721||IBRANCE||AGGREGATE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6008131||JANUMET XR||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057810||XARELTO||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||73070010215||INSULIN ASPART PENFILL||EDIT||G||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169477212||OZEMPIC||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169430730||RYBELSUS||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||173088210||BREO ELLIPTA||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||58406005504||ENBREL||REBATABLE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169452514||WEGOVY||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6008131||JANUMET XR||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||73070010315||INSULIN ASPART FLEXPEN||EDIT||G||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||310621039||FARXIGA||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6022154||JANUVIA||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||173089310||TRELEGY ELLIPTA||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||78077720||ENTRESTO||AGGREGATE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||57962014009||IMBRUVICA||REBATABLE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057718||XARELTO||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||57894006103||STELARA||REBATABLE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||68546047656||AUSTEDO XR||REBATABLE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169452414||WEGOVY||AGGREGATE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057990||XARELTO||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6008061||JANUMET XR||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||59572050121||POMALYST||AGGREGATE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169451714||WEGOVY||AGGREGATE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||66993045630||DAPAGLIFLOZIN PROPANEDIOL||AGGREGATE||G||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169320111||FIASP||AGGREGATE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||69028403||IBRANCE||AGGREGATE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6011231||JANUVIA||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||66993013697||FLUTICASONE FUROATE/VILANTEROL ELLIPTA||EDIT||G||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||69018821||IBRANCE||AGGREGATE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||61874016030||VRAYLAR||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||66993045730||DAPAGLIFLOZIN PROPANEDIOL||AGGREGATE||G||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||61874013030||VRAYLAR||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169451714||WEGOVY||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||78069667||ENTRESTO||AGGREGATE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||66993045630||DAPAGLIFLOZIN PROPANEDIOL||AGGREGATE||G||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169750111||NOVOLOG||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169450514||WEGOVY||AGGREGATE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169320415||FIASP FLEXTOUCH||AGGREGATE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6011254||JANUVIA||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||57894006103||STELARA||REBATABLE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||456120130||LINZESS||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||73070010011||INSULIN ASPART||EDIT||G||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||456120230||LINZESS||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||58406003204||ENBREL SURECLICK||REBATABLE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||57894006003||STELARA||REBATABLE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||58406002104||ENBREL||REBATABLE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||68546047256||AUSTEDO XR||AGGREGATE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169320111||FIASP||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||456120230||LINZESS||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169450514||WEGOVY||AGGREGATE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||55513013760||OTEZLA||REBATABLE||B||B||Y||Y||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||469012599||XTANDI||REBATABLE||B||B||Y||Y||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||55513036955||OTEZLA||REBATABLE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||456120230||LINZESS||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||78077720||ENTRESTO||AGGREGATE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||78065920||ENTRESTO||AGGREGATE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169450114||WEGOVY||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169418113||OZEMPIC||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057910||XARELTO||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||597014360||OFEV||ALTERNATIVE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||59572050421||POMALYST||AGGREGATE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6027782||JANUVIA||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||68546047456||AUSTEDO XR||REBATABLE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||58406001004||ENBREL||REBATABLE||B||B||Y||Y||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||59572050221||POMALYST||AGGREGATE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||50458057989||XARELTO||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||3089321||ELIQUIS||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169450114||WEGOVY||AGGREGATE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6007861||JANUMET XR||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||61874013030||VRAYLAR||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||57962014012||IMBRUVICA||REBATABLE||B||B||Y||Y||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6008061||JANUMET XR||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||61874014530||VRAYLAR||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||66993013597||FLUTICASONE FUROATE/VILANTEROL ELLIPTA||EDIT||G||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169477212||OZEMPIC||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||73070010315||INSULIN ASPART FLEXPEN||EDIT||G||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169330312||NOVOLOG PENFILL||AGGREGATE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||469062599||XTANDI||REBATABLE||B||B||Y||Y||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||3089470||ELIQUIS||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||3089470||ELIQUIS||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6027731||JANUVIA||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||6057761||JANUMET||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||169210125||NOVOLOG FLEXPEN RELION||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5_GOV||173091610||BREO ELLIPTA||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP [2026, 2027]</td><td>MFP 2026 & 2027</td></tr>
+</table>
+<h2>Extra Rows</h2>
+<h3>Only in File 1</h3>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>__ROW_KEY__</th>
+      <th>Formulary</th>
+      <th>NDC11</th>
+      <th>Drug Name</th>
+      <th>Drug Type</th>
+      <th>G/B Medispan w Override</th>
+      <th>G/B (Alternative)</th>
+      <th>Specialty Ind (ORx Std)</th>
+      <th>Specialty Ind (Alternative)</th>
+      <th>Mail Ind</th>
+      <th>DS Range</th>
+      <th>Sp Re-Class Code</th>
+      <th>Exclusion Code</th>
+      <th>Inclusion Code</th>
+      <th>MSB Indicator (Shift to Gs)</th>
+      <th>Maint Drug</th>
+      <th>340B Rejection Fctr</th>
+      <th>Therapeutic Class</th>
+      <th>Pre-Shift_Days Supply_Base Yr</th>
+      <th>Pre-Shift_AWP_Base Yr</th>
+      <th>Pre-Shift_Scripts_Base Yr</th>
+      <th>Pre-Shift_Scripts_2027</th>
+      <th>Pre-Shift_Scripts_2028</th>
+      <th>Pre-Shift_Scripts_2029</th>
+      <th>Pre-Shift_Scripts_2030</th>
+      <th>Pre-Shift_Scripts_2031</th>
+      <th>Pre-Shift_QTY_Base Yr</th>
+      <th>Pre-Shift_QTY_2027</th>
+      <th>Pre-Shift_QTY_2028</th>
+      <th>Pre-Shift_QTY_2029</th>
+      <th>Pre-Shift_QTY_2030</th>
+      <th>Pre-Shift_QTY_2031</th>
+      <th>Shifted_Scripts_2027 CoT</th>
+      <th>Shifted_Scripts_2028</th>
+      <th>Shifted_Scripts_2029</th>
+      <th>Shifted_Scripts_2030</th>
+      <th>Shifted_Scripts_2031</th>
+      <th>Shifted_QTY_2027 CoT</th>
+      <th>Shifted_QTY_2028</th>
+      <th>Shifted_QTY_2029</th>
+      <th>Shifted_QTY_2030</th>
+      <th>Shifted_QTY_2031</th>
+      <th>Shifted_QTY_Selected Exclusion Ind</th>
+      <th>Shifted_QTY_Selected Excl Desc</th>
+      <th>Shifted_QTY_Exclusion Year Ind</th>
+      <th>Shifted_QTY_Selected Generic Ind</th>
+      <th>Shifted_QTY_Selected Specialty Ind</th>
+      <th>Shifted_QTY_Selected Sp Inclusion Ind</th>
+      <th>Pre-Shift + Hep C adj_Scripts_2027</th>
+      <th>Pre-Shift + Hep C adj_Scripts_2028</th>
+      <th>Pre-Shift + Hep C adj_Scripts_2029</th>
+      <th>Pre-Shift + Hep C adj_Scripts_2030</th>
+      <th>Pre-Shift + Hep C adj_Scripts_2031</th>
+      <th>Pre-Shift + Hep C adj_QTY_2027</th>
+      <th>Pre-Shift + Hep C adj_QTY_2028</th>
+      <th>Pre-Shift + Hep C adj_QTY_2029</th>
+      <th>Pre-Shift + Hep C adj_QTY_2030</th>
+      <th>Pre-Shift + Hep C adj_QTY_2031</th>
+      <th>Pre-Shift_AWP_2027</th>
+      <th>Pre-Shift_AWP_2028</th>
+      <th>Pre-Shift_AWP_2029</th>
+      <th>Pre-Shift_AWP_2030</th>
+      <th>Pre-Shift_AWP_2031</th>
+      <th>Pre-Shift_Base_2027</th>
+      <th>Pre-Shift_Base_2028</th>
+      <th>Pre-Shift_Base_2029</th>
+      <th>Pre-Shift_Base_2030</th>
+      <th>Pre-Shift_Base_2031</th>
+      <th>Pre-Shift_MAF_2027</th>
+      <th>Pre-Shift_MAF_2028</th>
+      <th>Pre-Shift_MAF_2029</th>
+      <th>Pre-Shift_MAF_2030</th>
+      <th>Pre-Shift_MAF_2031</th>
+      <th>Pre-Shift_PPL_2027</th>
+      <th>Pre-Shift_PPL_2028</th>
+      <th>Pre-Shift_PPL_2029</th>
+      <th>Pre-Shift_PPL_2030</th>
+      <th>Pre-Shift_PPL_2031</th>
+      <th>Pre-Shift_PPA_2027</th>
+      <th>Pre-Shift_PPA_2028</th>
+      <th>Pre-Shift_PPA_2029</th>
+      <th>Pre-Shift_PPA_2030</th>
+      <th>Pre-Shift_PPA_2031</th>
+      <th>Pre-Shift + Hep C adj_AWP_2027</th>
+      <th>Pre-Shift + Hep C adj_AWP_2028</th>
+      <th>Pre-Shift + Hep C adj_AWP_2029</th>
+      <th>Pre-Shift + Hep C adj_AWP_2030</th>
+      <th>Pre-Shift + Hep C adj_AWP_2031</th>
+      <th>Pre-Shift + Hep C adj_Base_2027</th>
+      <th>Pre-Shift + Hep C adj_Base_2028</th>
+      <th>Pre-Shift + Hep C adj_Base_2029</th>
+      <th>Pre-Shift + Hep C adj_Base_2030</th>
+      <th>Pre-Shift + Hep C adj_Base_2031</th>
+      <th>Pre-Shift + Hep C adj_MAF_2027</th>
+      <th>Pre-Shift + Hep C adj_MAF_2028</th>
+      <th>Pre-Shift + Hep C adj_MAF_2029</th>
+      <th>Pre-Shift + Hep C adj_MAF_2030</th>
+      <th>Pre-Shift + Hep C adj_MAF_2031</th>
+      <th>Pre-Shift + Hep C adj_PPL_2027</th>
+      <th>Pre-Shift + Hep C adj_PPL_2028</th>
+      <th>Pre-Shift + Hep C adj_PPL_2029</th>
+      <th>Pre-Shift + Hep C adj_PPL_2030</th>
+      <th>Pre-Shift + Hep C adj_PPL_2031</th>
+      <th>Pre-Shift + Hep C adj_PPA_2027</th>
+      <th>Pre-Shift + Hep C adj_PPA_2028</th>
+      <th>Pre-Shift + Hep C adj_PPA_2029</th>
+      <th>Pre-Shift + Hep C adj_PPA_2030</th>
+      <th>Pre-Shift + Hep C adj_PPA_2031</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2027</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2028</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2029</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2030</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2031</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2027</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2028</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2029</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2030</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2031</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2027</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2028</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2029</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2030</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2031</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2027</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2028</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2029</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2030</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2031</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2027</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2028</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2029</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2030</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2031</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2027</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2028</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2029</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2030</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2031</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2027</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2028</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2029</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2030</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2031</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2027</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2028</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2029</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2030</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2031</th>
+      <th>Pre-Shift_MAF Adjustement_2027</th>
+      <th>Pre-Shift_MAF Adjustement_2028</th>
+      <th>Pre-Shift_MAF Adjustement_2029</th>
+      <th>Pre-Shift_MAF Adjustement_2030</th>
+      <th>Pre-Shift_MAF Adjustement_2031</th>
+      <th>Pre-Shift + Hep C adj_MAF Adjustement_2027</th>
+      <th>Pre-Shift + Hep C adj_MAF Adjustement_2028</th>
+      <th>Pre-Shift + Hep C adj_MAF Adjustement_2029</th>
+      <th>Pre-Shift + Hep C adj_MAF Adjustement_2030</th>
+      <th>Pre-Shift + Hep C adj_MAF Adjustement_2031</th>
+      <th>Pre-Shift + Hep C adj_Base Adjustment_2027</th>
+      <th>Pre-Shift + Hep C adj_Base Adjustment_2028</th>
+      <th>Pre-Shift + Hep C adj_Base Adjustment_2029</th>
+      <th>Pre-Shift + Hep C adj_Base Adjustment_2030</th>
+      <th>Pre-Shift + Hep C adj_Base Adjustment_2031</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2027</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2028</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2029</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2030</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2031</th>
+      <th>Pre-Shift + Hep C adj_Base/MAF Adjustment $_2027</th>
+      <th>Pre-Shift + Hep C adj_Base/MAF Adjustment $_2028</th>
+      <th>Pre-Shift + Hep C adj_Base/MAF Adjustment $_2029</th>
+      <th>Pre-Shift + Hep C adj_Base/MAF Adjustment $_2030</th>
+      <th>Pre-Shift + Hep C adj_Base/MAF Adjustment $_2031</th>
+      <th>Pre-Shift + Hep C adj_AWP w/o Biosim Adj_2027</th>
+      <th>Pre-Shift + Hep C adj_AWP w/o Biosim Adj_2028</th>
+      <th>Pre-Shift + Hep C adj_AWP w/o Biosim Adj_2029</th>
+      <th>Pre-Shift + Hep C adj_AWP w/o Biosim Adj_2030</th>
+      <th>Pre-Shift + Hep C adj_AWP w/o Biosim Adj_2031</th>
+      <th>Pre-Shift + Hep C adj_Base  w/o Biosim Adj_2027</th>
+      <th>Pre-Shift + Hep C adj_Base  w/o Biosim Adj_2028</th>
+      <th>Pre-Shift + Hep C adj_Base  w/o Biosim Adj_2029</th>
+      <th>Pre-Shift + Hep C adj_Base  w/o Biosim Adj_2030</th>
+      <th>Pre-Shift + Hep C adj_Base  w/o Biosim Adj_2031</th>
+      <th>Pre-MFP Adjustment Rebates_2027</th>
+      <th>Pre-MFP Adjustment Rebates_2028</th>
+      <th>Pre-MFP Adjustment Rebates_2029</th>
+      <th>Pre-MFP Adjustment Rebates_2030</th>
+      <th>Pre-MFP Adjustment Rebates_2031</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<h3>Only in File 2</h3>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>__ROW_KEY__</th>
+      <th>Formulary</th>
+      <th>NDC11</th>
+      <th>Drug Name</th>
+      <th>Drug Type</th>
+      <th>G/B Medispan w Override</th>
+      <th>G/B (Alternative)</th>
+      <th>Specialty Ind (ORx Std)</th>
+      <th>Specialty Ind (Alternative)</th>
+      <th>Mail Ind</th>
+      <th>DS Range</th>
+      <th>Sp Re-Class Code</th>
+      <th>Exclusion Code</th>
+      <th>Inclusion Code</th>
+      <th>MSB Indicator (Shift to Gs)</th>
+      <th>Maint Drug</th>
+      <th>340B Rejection Fctr</th>
+      <th>Therapeutic Class</th>
+      <th>Pre-Shift_Days Supply_Base Yr</th>
+      <th>Pre-Shift_AWP_Base Yr</th>
+      <th>Pre-Shift_Scripts_Base Yr</th>
+      <th>Pre-Shift_Scripts_2027</th>
+      <th>Pre-Shift_Scripts_2028</th>
+      <th>Pre-Shift_Scripts_2029</th>
+      <th>Pre-Shift_Scripts_2030</th>
+      <th>Pre-Shift_Scripts_2031</th>
+      <th>Pre-Shift_QTY_Base Yr</th>
+      <th>Pre-Shift_QTY_2027</th>
+      <th>Pre-Shift_QTY_2028</th>
+      <th>Pre-Shift_QTY_2029</th>
+      <th>Pre-Shift_QTY_2030</th>
+      <th>Pre-Shift_QTY_2031</th>
+      <th>Shifted_Scripts_2027 CoT</th>
+      <th>Shifted_Scripts_2028</th>
+      <th>Shifted_Scripts_2029</th>
+      <th>Shifted_Scripts_2030</th>
+      <th>Shifted_Scripts_2031</th>
+      <th>Shifted_QTY_2027 CoT</th>
+      <th>Shifted_QTY_2028</th>
+      <th>Shifted_QTY_2029</th>
+      <th>Shifted_QTY_2030</th>
+      <th>Shifted_QTY_2031</th>
+      <th>Selected Exclusion Ind</th>
+      <th>Selected Excl Desc</th>
+      <th>Exclusion Year Ind</th>
+      <th>Selected Generic Ind</th>
+      <th>Selected Specialty Ind</th>
+      <th>Selected Sp Inclusion Ind</th>
+      <th>Pre-Shift + Hep C adj_Scripts_2027</th>
+      <th>Pre-Shift + Hep C adj_Scripts_2028</th>
+      <th>Pre-Shift + Hep C adj_Scripts_2029</th>
+      <th>Pre-Shift + Hep C adj_Scripts_2030</th>
+      <th>Pre-Shift + Hep C adj_Scripts_2031</th>
+      <th>Pre-Shift + Hep C adj_QTY_2027</th>
+      <th>Pre-Shift + Hep C adj_QTY_2028</th>
+      <th>Pre-Shift + Hep C adj_QTY_2029</th>
+      <th>Pre-Shift + Hep C adj_QTY_2030</th>
+      <th>Pre-Shift + Hep C adj_QTY_2031</th>
+      <th>Pre-Shift_AWP_2027</th>
+      <th>Pre-Shift_AWP_2028</th>
+      <th>Pre-Shift_AWP_2029</th>
+      <th>Pre-Shift_AWP_2030</th>
+      <th>Pre-Shift_AWP_2031</th>
+      <th>Pre-Shift_Base_2027</th>
+      <th>Pre-Shift_Base_2028</th>
+      <th>Pre-Shift_Base_2029</th>
+      <th>Pre-Shift_Base_2030</th>
+      <th>Pre-Shift_Base_2031</th>
+      <th>Pre-Shift_MAF_2027</th>
+      <th>Pre-Shift_MAF_2028</th>
+      <th>Pre-Shift_MAF_2029</th>
+      <th>Pre-Shift_MAF_2030</th>
+      <th>Pre-Shift_MAF_2031</th>
+      <th>Pre-Shift_PPL_2027</th>
+      <th>Pre-Shift_PPL_2028</th>
+      <th>Pre-Shift_PPL_2029</th>
+      <th>Pre-Shift_PPL_2030</th>
+      <th>Pre-Shift_PPL_2031</th>
+      <th>Pre-Shift_PPA_2027</th>
+      <th>Pre-Shift_PPA_2028</th>
+      <th>Pre-Shift_PPA_2029</th>
+      <th>Pre-Shift_PPA_2030</th>
+      <th>Pre-Shift_PPA_2031</th>
+      <th>Pre-Shift + Hep C adj_AWP_2027</th>
+      <th>Pre-Shift + Hep C adj_AWP_2028</th>
+      <th>Pre-Shift + Hep C adj_AWP_2029</th>
+      <th>Pre-Shift + Hep C adj_AWP_2030</th>
+      <th>Pre-Shift + Hep C adj_AWP_2031</th>
+      <th>Pre-Shift + Hep C adj_Base_2027</th>
+      <th>Pre-Shift + Hep C adj_Base_2028</th>
+      <th>Pre-Shift + Hep C adj_Base_2029</th>
+      <th>Pre-Shift + Hep C adj_Base_2030</th>
+      <th>Pre-Shift + Hep C adj_Base_2031</th>
+      <th>Pre-Shift + Hep C adj_MAF_2027</th>
+      <th>Pre-Shift + Hep C adj_MAF_2028</th>
+      <th>Pre-Shift + Hep C adj_MAF_2029</th>
+      <th>Pre-Shift + Hep C adj_MAF_2030</th>
+      <th>Pre-Shift + Hep C adj_MAF_2031</th>
+      <th>Pre-Shift + Hep C adj_PPL_2027</th>
+      <th>Pre-Shift + Hep C adj_PPL_2028</th>
+      <th>Pre-Shift + Hep C adj_PPL_2029</th>
+      <th>Pre-Shift + Hep C adj_PPL_2030</th>
+      <th>Pre-Shift + Hep C adj_PPL_2031</th>
+      <th>Pre-Shift + Hep C adj_PPA_2027</th>
+      <th>Pre-Shift + Hep C adj_PPA_2028</th>
+      <th>Pre-Shift + Hep C adj_PPA_2029</th>
+      <th>Pre-Shift + Hep C adj_PPA_2030</th>
+      <th>Pre-Shift + Hep C adj_PPA_2031</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2027</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2028</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2029</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2030</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2031</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2027</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2028</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2029</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2030</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2031</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2027</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2028</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2029</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2030</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2031</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2027</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2028</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2029</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2030</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2031</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2027</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2028</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2029</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2030</th>
+      <th>Includes Recontracting Lift with Annualization but No Shift Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2031</th>
+      <th>Total_2027</th>
+      <th>Total_2028</th>
+      <th>Total_2029</th>
+      <th>Total_2030</th>
+      <th>Total_2031</th>
+      <th>Rebatable Indicator_2027</th>
+      <th>Rebatable Indicator_2028</th>
+      <th>Rebatable Indicator_2029</th>
+      <th>Rebatable Indicator_2030</th>
+      <th>Rebatable Indicator_2031</th>
+      <th>WAC (Rebatable)_2027</th>
+      <th>WAC (Rebatable)_2028</th>
+      <th>WAC (Rebatable)_2029</th>
+      <th>WAC (Rebatable)_2030</th>
+      <th>WAC (Rebatable)_2031</th>
+      <th>Pre-Shift_MAF Adjustement_2027</th>
+      <th>Pre-Shift_MAF Adjustement_2028</th>
+      <th>Pre-Shift_MAF Adjustement_2029</th>
+      <th>Pre-Shift_MAF Adjustement_2030</th>
+      <th>Pre-Shift_MAF Adjustement_2031</th>
+      <th>Pre-Shift + Hep C adj_MAF Adjustement_2027</th>
+      <th>Pre-Shift + Hep C adj_MAF Adjustement_2028</th>
+      <th>Pre-Shift + Hep C adj_MAF Adjustement_2029</th>
+      <th>Pre-Shift + Hep C adj_MAF Adjustement_2030</th>
+      <th>Pre-Shift + Hep C adj_MAF Adjustement_2031</th>
+      <th>Base Adjustment_2027</th>
+      <th>Base Adjustment_2028</th>
+      <th>Base Adjustment_2029</th>
+      <th>Base Adjustment_2030</th>
+      <th>Base Adjustment_2031</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2027</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2028</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2029</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2030</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2031</th>
+      <th>Pre-Shift + Hep C adj_Base/MAF Adjustment $_2027</th>
+      <th>Pre-Shift + Hep C adj_Base/MAF Adjustment $_2028</th>
+      <th>Pre-Shift + Hep C adj_Base/MAF Adjustment $_2029</th>
+      <th>Pre-Shift + Hep C adj_Base/MAF Adjustment $_2030</th>
+      <th>Pre-Shift + Hep C adj_Base/MAF Adjustment $_2031</th>
+      <th>Pre-Shift + Hep C adj_AWP w/o Biosim Adj_2027</th>
+      <th>Pre-Shift + Hep C adj_AWP w/o Biosim Adj_2028</th>
+      <th>Pre-Shift + Hep C adj_AWP w/o Biosim Adj_2029</th>
+      <th>Pre-Shift + Hep C adj_AWP w/o Biosim Adj_2030</th>
+      <th>Pre-Shift + Hep C adj_AWP w/o Biosim Adj_2031</th>
+      <th>Pre-Shift + Hep C adj_Base w/o Biosim Adj_2027</th>
+      <th>Pre-Shift + Hep C adj_Base w/o Biosim Adj_2028</th>
+      <th>Pre-Shift + Hep C adj_Base w/o Biosim Adj_2029</th>
+      <th>Pre-Shift + Hep C adj_Base w/o Biosim Adj_2030</th>
+      <th>Pre-Shift + Hep C adj_Base w/o Biosim Adj_2031</th>
+      <th>Pre-MFP Adjustment Rebates_2027</th>
+      <th>Pre-MFP Adjustment Rebates_2028</th>
+      <th>Pre-MFP Adjustment Rebates_2029</th>
+      <th>Pre-MFP Adjustment Rebates_2030</th>
+      <th>Pre-MFP Adjustment Rebates_2031</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+</body></html>

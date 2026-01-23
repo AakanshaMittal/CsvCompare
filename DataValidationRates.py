@@ -133,13 +133,7 @@ def build_composite_headers(rows, group_row, detail_row, joiner="_"):
 
             group_key = normalize_header(group)
 
-            if group_key not in group_year_counter:
-
-                group_year_counter[group_key] = 1
-
-            else:
-
-                group_year_counter[group_key] += 1
+            group_year_counter[group_key] = group_year_counter.get(group_key, 0) + 1
 
             year_no = group_year_counter[group_key]
 
@@ -175,7 +169,7 @@ def build_row_map(rows, headers, data_start_row):
 
         return None
  
-    drug_col = find_col("drugname")
+    drug_col = find_col("drug name")
 
     ndc_col = find_col("ndc11")
  
@@ -224,31 +218,15 @@ def is_number(val: str) -> bool:
         return False
  
  
-def truncate_2(val: float) -> float:
-
-    return math.trunc(val * 100) / 100
- 
- 
 def numeric_major_mismatch(v1: str, v2: str) -> bool:
 
     try:
 
-        n1 = truncate_2(float(clean_numeric(v1)))
+        n1 = float(clean_numeric(v1))
 
-        n2 = truncate_2(float(clean_numeric(v2)))
+        n2 = float(clean_numeric(v2))
 
-        return n1 != n2
-
-    except:
-
-        return False
- 
- 
-def integer_part_diff(v1: str, v2: str) -> bool:
-
-    try:
-
-        return int(float(clean_numeric(v1))) != int(float(clean_numeric(v2)))
+        return abs(n1 - n2) > 0.00001
 
     except:
 
@@ -291,7 +269,7 @@ def compare_by_row_key(headers1, headers2, map1, map2):
             v1 = r1[i1] if i1 < len(r1) else ""
 
             v2 = r2[i2] if i2 < len(r2) else ""
-
+ 
             v1 = v1.strip()
 
             v2 = v2.strip()
@@ -306,9 +284,7 @@ def compare_by_row_key(headers1, headers2, map1, map2):
 
                     mismatch = True
 
-                    if integer_part_diff(v1, v2):
-
-                        highlight = True
+                    highlight = True
 
             else:
 
@@ -328,7 +304,7 @@ def compare_by_row_key(headers1, headers2, map1, map2):
  
  
 def write_html_report(path, mismatches, group_counter, extra1, extra2, headers1, headers2, file1, file2):
-
+ 
     miss_rows = ""
 
     for k, h, v1, v2, highlight in mismatches:
@@ -371,10 +347,6 @@ th {{background:#eee}}
 <p><b>Extra rows in {escape(os.path.basename(file1))}:</b> {len(extra1)}</p>
 <p><b>Extra rows in {escape(os.path.basename(file2))}:</b> {len(extra2)}</p>
  
-<h3>Extra Columns</h3>
-<p><b>Only in {escape(os.path.basename(file1))}:</b> {only1}</p>
-<p><b>Only in {escape(os.path.basename(file2))}:</b> {only2}</p>
- 
 <h2>Group Summary</h2>
 <table>
 <tr><th>Group</th><th>Difference Count</th></tr>
@@ -382,7 +354,7 @@ th {{background:#eee}}
 {group_rows}
 </table>
  
-<h2>Mismatch Details</h2>
+<h2>Mismatch Details (Only |diff| > 0.00001)</h2>
 <table>
 <tr><th>Row Key</th><th>Column</th><th>{escape(os.path.basename(file1))}</th><th>{escape(os.path.basename(file2))}</th></tr>
 
@@ -418,8 +390,8 @@ def main():
 
     ap.add_argument("--data-row", type=int, default=3)
 
-    ap.add_argument("--html", default="uat_report.html")
-
+    ap.add_argument("--html", default="RPQReport.html")
+ 
     args = ap.parse_args()
  
     rows1 = read_table(args.file1, args.delimiter)
